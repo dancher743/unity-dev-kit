@@ -1,22 +1,24 @@
 using UnityEngine;
 
-namespace Core
+namespace DevKit
 {
     public static class Extensions
     {
         #region Unity
 
-        public static void DestroyChildrens(this Transform transform)
+        public static void DestroyChildren(this Transform transform)
         {
             for (int i = transform.childCount - 1; i >= 0; i--)
             {
+                var child = transform.GetChild(i).gameObject;
+
                 if (Application.isEditor)
                 {
-                    Object.DestroyImmediate(transform.GetChild(i).gameObject);
+                    Object.DestroyImmediate(child);
                 }
                 else
                 {
-                    Object.Destroy(transform.GetChild(i).gameObject);
+                    Object.Destroy(child);
                 }
             }
         }

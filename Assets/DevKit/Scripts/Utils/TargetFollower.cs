@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core.Utils
+namespace DevKit.Utils
 {
     public class TargetFollower : MonoBehaviour
     {

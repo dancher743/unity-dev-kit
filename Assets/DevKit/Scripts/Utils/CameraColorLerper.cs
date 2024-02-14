@@ -2,7 +2,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 
-namespace Core.Utils
+namespace DevKit.Utils
 {
     public class CameraColorLerper : MonoBehaviour
     {

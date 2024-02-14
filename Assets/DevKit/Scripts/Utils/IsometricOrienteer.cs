@@ -1,11 +1,11 @@
 using NaughtyAttributes;
 using UnityEngine;
 
-namespace Core.Utils
+namespace DevKit.Utils
 {
     public class IsometricOrienteer : MonoBehaviour
     {
-        private readonly Vector3 isometricVector = new Vector3(30f, 40f, 0f);
+        private readonly Vector3 isometricVector = new(30f, 40f, 0f);
 
         [Button]
         public void Orient()
