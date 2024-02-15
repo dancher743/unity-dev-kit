@@ -1,10 +1,9 @@
 using DevKit.Constants;
 using DevKit.Debugging;
-using System;
 using System.Linq;
 using UnityEditor;
 
-namespace DevKit.UnityEditor
+namespace DevKit.Editors
 {
     public static class DefineSymbolsAdder
     {

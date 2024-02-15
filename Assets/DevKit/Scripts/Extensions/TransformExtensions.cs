@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DevKit
 {
-    public static class UnityExtensions
+    public static class TransformExtensions
     {
         public static void DestroyChildren(this Transform transform)
         {
