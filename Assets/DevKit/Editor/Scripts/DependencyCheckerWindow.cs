@@ -29,7 +29,7 @@ namespace DevKit.Editors
             GUILayout.BeginHorizontal();
 
             var iconName = !isInstalled ? "circle_red_checkmark" : "circle_green_checkmark";
-            var icon = Resources.Load<Texture>("Editor/" + iconName);
+            var icon = Resources.Load<Texture>(iconName);
             GUILayout.Label(icon);
 
             GUILayout.Label(name);
