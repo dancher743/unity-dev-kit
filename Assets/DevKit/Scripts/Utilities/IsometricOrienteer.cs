@@ -2,7 +2,7 @@ using DevKit.Debugging;
 using NaughtyAttributes;
 using UnityEngine;
 
-namespace DevKit.Utils
+namespace DevKit.Utilities
 {
     public class IsometricOrienteer : MonoBehaviour
     {

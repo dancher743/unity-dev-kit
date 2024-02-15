@@ -2,10 +2,8 @@ using UnityEngine;
 
 namespace DevKit
 {
-    public static class Extensions
+    public static class UnityExtensions
     {
-        #region Unity
-
         public static void DestroyChildren(this Transform transform)
         {
             for (int i = transform.childCount - 1; i >= 0; i--)
@@ -22,7 +20,5 @@ namespace DevKit
                 }
             }
         }
-
-        #endregion
     }
 }

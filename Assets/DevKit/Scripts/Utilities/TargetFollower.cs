@@ -1,7 +1,7 @@
 using DevKit.Debugging;
 using UnityEngine;
 
-namespace DevKit.Utils
+namespace DevKit.Utilities
 {
     public class TargetFollower : MonoBehaviour
     {
