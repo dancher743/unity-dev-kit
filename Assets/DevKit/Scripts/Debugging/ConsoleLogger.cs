@@ -10,5 +10,17 @@ namespace DevKit.Debugging
         {
             UnityEngine.Debug.Log(message);
         }
+
+        [Conditional(DefineSymbols.EnableDebugLog)]
+        public static void LogWarning(object message)
+        {
+            UnityEngine.Debug.LogWarning(message);
+        }
+
+        [Conditional(DefineSymbols.EnableDebugLog)]
+        public static void LogError(object message)
+        {
+            UnityEngine.Debug.LogError(message);
+        }
     }
 }
