@@ -1,3 +1,4 @@
+using DevKit.Debugging;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ namespace DevKit.Utils
         {
             transform.rotation = Quaternion.Euler(isometricVector);
 
-            Debug.Log($"{nameof(IsometricOrienteer)}: game object \"{name}\" has been oriented to isometric view.");
+            ConsoleLogger.Log($"{nameof(IsometricOrienteer)}: game object \"{name}\" has been oriented to isometric view.");
         }
     }
 }

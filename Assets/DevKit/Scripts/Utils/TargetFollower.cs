@@ -1,3 +1,4 @@
+using DevKit.Debugging;
 using UnityEngine;
 
 namespace DevKit.Utils
@@ -16,7 +17,7 @@ namespace DevKit.Utils
         {
             if (target == null)
             {
-                Debug.LogError($"Couldn't follow the {nameof(target)} of {nameof(TargetFollower)} on {gameObject.name} game object because it's null.");
+                ConsoleLogger.Log($"Couldn't follow the {nameof(target)} of {nameof(TargetFollower)} on {gameObject.name} game object because it's null.");
                 return;
             }
 
