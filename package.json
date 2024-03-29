@@ -1,0 +1,18 @@
+{
+  "name": "com.dancher.unity-dev-kit",
+  "version": "1.0.0",
+  "displayName": "Unity Dev Kit",
+  "description": "Unity Dev Kit is a development kit for Unity projects.",
+  "unity": "2022.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dancher743/unity-dev-kit"
+  },
+  "keywords": [
+    "framework",
+    "sdk",
+    "unity"
+  ],
+  "author": "Daniil Dubovik <daniil.dubovik@gmail.com> (https://github.com/dancher743)"
+}
