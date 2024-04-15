@@ -6,7 +6,6 @@ namespace DevKit.Constants
         {
             public const string RootItem = "Dev Kit";
             public const string AddDefineSymbols = RootItem + "/" + "Add Define Symbols";
-            public const string DependencyChecker = RootItem + "/" + "Dependency Checker";
         }
     }
 }
