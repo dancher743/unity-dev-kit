@@ -12,6 +12,16 @@ namespace DevKit.Editors
             DefineSymbols.EnableDebugLog
         };
 
+        [InitializeOnLoadMethod]
+        private static void OnLoad()
+        {
+            if (!EditorPrefs.GetBool(EditorPrefsKeys.DefineSymbolsAddedKey, false))
+            {
+                AddDefineSymbols();
+                EditorPrefs.SetBool(EditorPrefsKeys.DefineSymbolsAddedKey, true);
+            }
+        }
+
         [MenuItem(EditorPaths.MenuItems.AddDefineSymbolsItem)]
         public static void AddDefineSymbols()
         {
