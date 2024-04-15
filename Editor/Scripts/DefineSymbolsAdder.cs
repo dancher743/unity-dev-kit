@@ -1,5 +1,6 @@
 using DevKit.Constants;
 using DevKit.Debugging;
+using DevKit.Editors.Constants;
 using System.Linq;
 using UnityEditor;
 
@@ -11,7 +12,7 @@ namespace DevKit.Editors
             DefineSymbols.EnableDebugLog
         };
 
-        [MenuItem(Paths.Menu.AddDefineSymbols)]
+        [MenuItem(EditorPaths.MenuItems.AddDefineSymbolsItem)]
         public static void AddDefineSymbols()
         {
             var defineSymbolsAsString = PlayerSettings.GetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup);
