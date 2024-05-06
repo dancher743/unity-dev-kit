@@ -2,7 +2,8 @@
     "name": "dancher.unity-dev-kit",
     "rootNamespace": "",
     "references": [
-        "GUID:776d03a35f1b52c4a9aed9f56d7b4229"
+        "GUID:776d03a35f1b52c4a9aed9f56d7b4229",
+        "GUID:89681298901fc74409506edc32e357f9"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
