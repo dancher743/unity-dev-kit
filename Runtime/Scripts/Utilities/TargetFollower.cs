@@ -11,8 +11,6 @@ namespace DevKit.Utilities
         [SerializeField]
         private float smoothTime;
 
-        private Vector3 currentVelocity = Vector3.zero;
-
         public void LateUpdate()
         {
             if (target == null)
@@ -21,7 +19,15 @@ namespace DevKit.Utilities
                 return;
             }
 
-            transform.position = Vector3.SmoothDamp(transform.position, target.position, ref currentVelocity, smoothTime);
+            if (smoothTime == 0f)
+            {
+                transform.position = target.position;
+            }
+            else
+            {
+                var currentVelocity = Vector3.zero;
+                transform.position = Vector3.SmoothDamp(transform.position, target.position, ref currentVelocity, smoothTime);
+            }
         }
     }
 }
